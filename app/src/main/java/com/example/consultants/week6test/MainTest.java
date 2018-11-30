@@ -16,7 +16,11 @@ public class MainTest {
         tree.preOrderTraversal();
         System.out.println();
 
-        //LRU cache
+        //Spiral Printer
+        int[][] twoDArray = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+        SpiralPrinter spiralPrinter = new SpiralPrinter();
+
+        spiralPrinter.print(twoDArray);
 
     }
 
