@@ -3,11 +3,21 @@ package com.example.consultants.week6test;
 public class MainTest {
 
     public static void main(String[] args) {
+        //merge sort
         int[] input = {5, 2, 8, 9, 4, 15, 17, 13, 20, 10, 1, 3, 6, 7, 22, 48, 30, 12, 33, 21};
         mergeSort(input, input.length);
         for (int i = 0; i < input.length; i++) {
             System.out.print(input[i] + " ");
         }
+        System.out.println();
+
+        //binary tree
+        BinaryTree tree = new BinaryTree().createTree();
+        tree.preOrderTraversal();
+        System.out.println();
+
+        //LRU cache
+
     }
 
     public static void mergeSort(int[] input, int length) {
