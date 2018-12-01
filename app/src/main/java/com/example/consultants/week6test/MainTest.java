@@ -30,6 +30,9 @@ public class MainTest {
         String test1 = "({})[]"; // true
         String test2 = "[]{]}["; // false
 
+        System.out.println(ParenChecker.check(test1));
+        System.out.println(ParenChecker.check(test2));
+
     }
 
     public static void mergeSort(int[] input, int length) {

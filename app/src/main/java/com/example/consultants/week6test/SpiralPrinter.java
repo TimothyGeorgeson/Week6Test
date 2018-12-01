@@ -8,20 +8,23 @@ public class SpiralPrinter {
         int endRow = input.length;
         int startCol = 0;
         int endCol = input[0].length;
-        int i = 0;
+        int i;
 
         while (startRow < endRow && startCol < endCol)
         {
+            //prints toprow, then increments start row (so top row won't be included next pass)
             for (i = startCol; i < endCol ; i++) {
                 System.out.print(input[startRow][i] + " ");
             }
             startRow++;
 
+            //prints lastcol, decrements end col
             for (i = startRow; i < endRow; i++) {
                 System.out.print(input[i][endCol - 1] + " ");
             }
             endCol--;
 
+            //prints bottom row, decrements end row
             if (startRow < endRow) {
                 for (i = endCol - 1; i >= startCol; i--) {
                     System.out.print(input[endRow - 1][i]+ " ");
@@ -29,6 +32,7 @@ public class SpiralPrinter {
             }
             endRow--;
 
+            //prints first col, increases starting column
             if (startCol < endCol) {
                 for (i = endRow - 1; i >= startRow; i--) {
                     System.out.print(input[i][startCol] + " ");
@@ -37,12 +41,5 @@ public class SpiralPrinter {
             startCol++;
 
         }
-
-            int[] top = new int[input.length];
-        int[] right = new int[input[0].length];
-        int[] bottom = new int[input.length];
-        int[] left = new int[input[0].length];
-
-
     }
 }
