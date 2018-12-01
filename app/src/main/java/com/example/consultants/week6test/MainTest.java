@@ -17,10 +17,18 @@ public class MainTest {
         System.out.println();
 
         //Spiral Printer
-        int[][] twoDArray = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+        int[][] twoDArray1 = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+        int[][] twoDArray2 = {{1, 2, 3, 4, 5, 6}, {7, 8, 9, 10, 11, 12}, {13, 14, 15, 16, 17, 18}};
         SpiralPrinter spiralPrinter = new SpiralPrinter();
 
-        spiralPrinter.print(twoDArray);
+        spiralPrinter.print(twoDArray1);
+        System.out.println();
+        spiralPrinter.print(twoDArray2);
+        System.out.println();
+
+        //Checking for correct parentheses/bracket order
+        String test1 = "({})[]"; // true
+        String test2 = "[]{]}["; // false
 
     }
 
